@@ -1,0 +1,21 @@
+12-23-2015
+Gui Goals:
+-Control Flow:
+	- load an existing or create a new playfile
+	- edit the playfile in an spreadsheet setting
+	- save the playfile
+	- parse the playfile and send the commands
+-Use either MA or DAC resolution + Direction units to specify currents
+
+Modifications to Playfile Format:
+- MA current instead of DAC resolution + Direction
+- Direction information inferred from current
+
+12-25-2015
+Issues:
+-Pointers to panels getting deleted: try using references instead of pointers
+-trying to create class object (can't use a default constructor, or can I?), but keep getting the following error:
+"operator= can not be referenced-- it is a deleted function" when trying to dereference "new X()"
+
+12-29-2015
+Experimenting with boost shared_ptr library
